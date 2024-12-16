@@ -34,8 +34,8 @@ const useHelper = () => {
     rows: 12,
     page: 0,
   });
-  console.log(selectedProducts);
-  console.log(products);
+  //   console.log(selectedProducts);
+  //   console.log(products);
 
   function onPage(event: any) {
     const obj: LazyTableState = {
@@ -67,7 +67,7 @@ const useHelper = () => {
   }
 
   function handleSelection(e: any) {
-    console.log(e);
+    // console.log(e);
     if (e.type === "all") {
       if (e.originalEvent.checked === true) {
         const newArr = selectedProducts.filter((e) => {
